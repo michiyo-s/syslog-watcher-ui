@@ -1,0 +1,716 @@
+// Copyright (C) EZ5 Systems Ltd. All Rights Reserved.
+// Unauthorized copying of this file via any medium is strictly prohibited.
+
+// C/C++ COMMENTS  = form double slash until the end of the line
+
+///////////////////////////////////////////////////////////////////////////////
+// GENERAL STRINGS - translate only strings in quotes ("...")
+
+STRINGTABLE
+BEGIN
+AFX_IDS_IDLEMESSAGE       "For Help, click Support button."
+IDS_CONTACT_TECH_SUPPORT  "Please contact technical support."
+END
+
+STRINGTABLE // Work mode: Open Syslog Storage
+BEGIN
+IDS_OPEN_FOLDER_TITLE     "Select Storage Folder"
+IDS_CAPTION_OPEN_STORAGE  "Syslog Storage"
+END
+
+STRINGTABLE // Common words
+BEGIN
+IDS_APPLY               "Apply"
+IDS_CANCEL              "Cancel"
+IDS_NAME                "Name"
+IDS_DESCRIPTION         "Description"
+IDS_READ_ONLY           "read-only"
+IDS_ADD                 "Add"
+IDS_DEFAULT             "Default"
+IDS_CLOSE               "Close"
+IDS_FILE                "File"
+IDS_FOLDER              "Folder"
+IDS_UPDATED_AT          "Refreshed"
+IDS_MILLISECONDS        "ms"
+IDS_ACTIVE              "Active"
+IDS_YES                 "Yes"
+IDS_NO                  "No"
+IDS_FILTER              "Filter"
+IDS_ADVANCED            "Advanced"
+IDS_DELETE              "Delete"
+IDS_SERVER              "Server"
+IDS_PORT                "Port"
+IDS_LOGIN               "Login"
+IDS_PASSWORD            "Password"
+IDS_INSERT              "Insert"
+IDS_OK                  "OK"
+IDS_FIELDS              "Fields"
+IDS_OPERATORS           "Operators"
+IDS_LOGIC_OPERATORS     "Logic"
+IDS_BUFFER              "Buffer"
+IDS_OF                  "of" // used in "X of Y", for example "Groups (2 of 5)" 
+IDS_SHARED              "shared"
+IDS_STOP                "Stop"
+IDS_DAY                 "day"
+IDS_DAYS                "days"
+IDS_HOUR                "hour"
+IDS_HOURS               "hours"
+IDS_MINUTE              "minute"
+IDS_MINUTES             "minutes"
+IDS_SECOND              "second"
+IDS_SECONDS             "seconds"
+IDS_MESSAGE             "message"
+IDS_MESSAGES            "messages"
+IDS_TOTAL               "Total"
+IDS_VISIBLE             "Visible"
+IDS_SELECTED            "Selected"
+END
+
+STRINGTABLE   // Product installation / Uninstallation
+BEGIN
+IDS_INSTALL_SERVICE           "Syslog Watcher Service Installation"
+IDS_INITIALIZE_SERVICE        "Syslog Watcher Service Initialization"
+IDS_UNINSTALL_SERVICE         "Syslog Watcher Service Uninstallation"
+IDS_FAILED_SERVICE_INSTALL    "Failed to install Syslog Watcher service."
+IDS_FAILED_SERVICE_INITIALIZE "Failed to initialize Syslog Watcher service."
+IDS_FAILED_SERVICE_UNINSTALL  "Failed to uninstall Syslog Watcher service."
+END
+
+STRINGTABLE   // Syslog Watcher server manipulation
+BEGIN
+IDS_START_SERVICE               "Server Stop"
+IDS_STOP_SERVICE                "Server Start"
+IDS_FAILED_SERVICE_START        "Failed to start Syslog Watcher server."
+IDS_FAILED_SERVICE_STOP         "Failed to stop Syslog Watcher server."
+IDS_WINDOWS_FIREWALL            "Windows Firewall - Exception List"
+IDS_FAILED_FIREWALL_LIST_ADD    "Failed to add Syslog Watcher server to the list of exceptions."
+IDS_FAILED_FIREWALL_LIST_REMOVE "Failed to remove Syslog Watcher server from the list of exceptions."
+END
+
+
+///////////////////////////////////////////////////////////////////////////////
+// MAIN TOOLBAR BUTTONS - translate only strings in quotes ("...")
+// Each string contains 3 parts separated by \n: 
+// "[Description for status bar]\n[Description for tooltip]\n[Button]"
+// in most cases the status bar description is the same as the tooltip
+
+STRINGTABLE // Main Toolbar
+BEGIN
+IDC_START_SERVER        "Start Syslog Watcher server\nStart Syslog Watcher server\nStart Server"
+IDC_STOP_SERVER         "Stop Syslog Watcher server\nStop Syslog Watcher server\nStop Server"
+IDC_SETTINGS            "Configure Syslog Watcher server\nConfigure Syslog Watcher server\nConfigure"
+IDC_OPEN_STORAGE        "Open syslog storage folder\nOpen syslog storage folder\nOpen Storage"
+IDC_CLOSE_STORAGE       "Close syslog storage folder\Close syslog storage folder\nClose Storage"
+IDC_EXPLORE             "Explore syslog storage\nExplore syslog storage\Explore"
+IDC_VIEWER              "View syslog messages\nView syslog messages\nView"
+IDC_EXPORT              "Export syslogs\nExport syslogs\nExport"
+IDC_MANAGE_SERVER       "Connect to local Syslog Watcher server\nConnect to local Syslog Watcher server\nManage Server"
+IDC_DISCONNECT_FROM_SERVER "Disconnect from Syslog Watcher server\nDisconnect from Syslog Watcher server\nClose"
+IDC_OPTIONS             "Manager options\nManager options\nOptions"
+IDC_SUPPORT             "Get support\nGet support\nSupport"
+IDC_INFO                "Product information\nProduct information\nInfo"
+IDC_REPORT              "Generate report\nGenerate report\nReport"
+IDC_GROUPS              "Groups of originators\nGroups of originators\nGroups"
+IDC_PARSERS             "Syslog parsers\nSyslog parsers\nParsers"
+IDC_STORAGE_SETTINGS    "Syslog storage settings\nSyslog storage settings\nSettings"
+END
+
+
+///////////////////////////////////////////////////////////////////////////////
+// CONTROLS AND WINDOWS - translate only strings in quotes ("...")
+// IMPORTANT: if the string contains two parts separated with \n
+//    1st part (before \n) = short option name
+//    2st part (after \n) = long option description (can be empty)
+
+STRINGTABLE // Common Control: Severity Range
+BEGIN
+IDS_ALL_SEVERITY_LEVELS       "All levels"
+IDS_INVALID_SEVERITY_RANGE    "Invalid range"
+IDS_SEVERITY_MIN              "Minimum level"
+IDS_SEVERITY_MAX              "Maximum level"
+IDS_SEVERITY                  "Severity\nFilters syslog messages by severity level."
+END
+
+STRINGTABLE // Common Control: Originators Filter
+BEGIN
+IDS_ORIGINATORS               "Originators\nFilters syslog messages by originators ad originator groups."
+END
+
+STRINGTABLE // Groups Dialog
+BEGIN
+IDS_GROUP_NEW_NAME        "New group"
+IDS_GROUP_CATEGORY        "Group"
+IDS_GROUP_CATEGORY_HELP   "Add syslog originators to the group in the Originators tab."
+IDS_GROUP_WINDOW_CAPTION  "Storage: Originator Groups"
+IDS_GROUP_ADD             "New Group"
+IDS_GROUP_ERR_TOO_MANY    "The maximum number of originator groups has been reached."
+IDS_GROUP_ERR_EMPTY_NAME  "Please enter the group name."
+IDS_GROUP_NAME            "Name\nName of the originator group."
+IDS_GROUP_DESCRIPTION     "Description\nDesсribes the purpose of the group."
+IDS_GROUP_ERR_DUPLICATE   "A group with the same name already exists. Please enter another name."
+END
+
+STRINGTABLE // Parsers Dialog
+BEGIN
+IDS_PARSER_NEW_NAME         "New parser"
+IDS_PARSER_CATEGORY         "Parser"
+IDS_PARSER_CATEGORY_HELP    "Assign the parser to syslog originators in the Originators tab."
+IDS_PARSERS_WINDOW_CAPTION  "Storage: Syslog Parsers"
+IDS_PARSER_ADD              "New Parser"
+IDS_PARSER_ERR_TOO_MANY     "The maximum number of syslog parsers has been reached."
+IDS_PARSER_TYPE             "Type\nParser type."
+IDS_PARSER_ERR_EMPTY_NAME   "Please enter the parser name."
+IDS_PARSER_DEFAULT          "Default Parser\nFor all syslog originators that do not have a parser assigned."
+IDS_PARSER_DEFAULT_NAME     "Default storage parser"
+IDS_PARSER_NAME             "Name\nName of the syslog parser."
+IDS_PARSER_ERR_DUPLICATE    "A parser with the same name already exists. Please enter another name."
+IDS_PARSER_EXTRACTOR        "Field extractor\nRegular expression to get extra data fields form a message."
+IDS_PARSER_EXTRACTOR_EDITOR "Regular Expression Editor"
+END
+
+STRINGTABLE // Originators Dialog
+BEGIN
+IDS_NEW_ORIGINATOR_WINDOW   "Add Originator"
+IDS_EDIT_ORIGINATOR_WINDOW  "Edit Originator"
+IDS_EDIT_ORIGINATORS_WINDOW "Edit Multiple Originators"
+IDS_ORIG_NEW_NAME           "New originator"
+IDS_ORIG_NAME               "Name\nName of the originator."
+IDS_ORIG_DESCRIPTION        "Description\nDescribes the originator."
+IDS_ORIG_PARSER             "Parser\nParser assigned to the originator."
+IDS_ORIG_ORIGINATOR         "Originator\nSyslog originator properties."
+IDS_ORIG_ORIGINATORS        "Multiple Originators\nSyslog originator properties."
+IDS_ORIG_ID                 "ID\nUnique originator ID. Assigned at the originator creation and cannot be changed later."
+IDS_ORIG_MANY_PARSERS       "<different parsers are selected>"
+IDS_ORIG_GROUPS             "Groups\nGroups to which the originator is assigned."
+IDS_ORIG_ERR_EMPTY_ID       "Please enter the originator ID."
+IDS_ORIG_ERR_EMPTY_NAME     "Please enter the originator name."
+IDS_ORIG_ERR_SAME_ID        "An originator with the same ID already exists.\r\n\r\nPlease enter another ID." // multiline string, lines separated by \r\n
+END
+
+STRINGTABLE // Progress window (Loading messages)
+BEGIN
+IDS_PROGRESS_SEARCH             "Loading Messages..."
+IDS_PROGRESS_CURRENT            "Current"
+IDS_PROGRESS_LOADED             "Loaded"
+IDS_PROGRESS_MATCHES            "Matched"
+IDS_PROGRESS_LOADING_SPEED      "Loading speed"
+IDS_PROGRESS_PROCESSING_SPEED   "Processing speed"
+IDS_PROGRESS_MSG_PER_SEC        "msg/s"
+END
+
+STRINGTABLE // Info Window
+BEGIN
+IDS_CLICK_CHECK_UPDATES         "Click the 'Check for Updates' button below to get the information."
+IDS_CHECK_UPDATES               "Check for Updates"
+IDS_LICENSE_CAPTION             "License"
+IDS_UPDATES_CAPTION             "Updates"
+IDS_REQUEST_EVALUATION          "Request Evaluation License"
+IDS_DELETE_EVALUATION           "Delete Evaluation License"
+IDS_ACTIVATE_LICENSE            "Activate License Key"
+IDS_DEACTIVATE_LICENSE          "Deactivate License Key"
+IDS_NO_LICENSE_FILE             "No license key is installed. The server will use the default license."
+IDS_REQUEST_EVALUATION_TEXT     "An evaluation (30-day) Enterprise License will be obtained and installed automatically. Please contact support If you would like to try a different type of license."
+IDS_ERROR_REQUEST_EVALUATION    "Unable to obtain an evaluation license in automatic mode. Please contact technical support to get a license key."
+IDS_ERROR_INSTALL_EVALUATION    "Unable to install the obtained evaluation license."
+IDS_ERROR_DELETE_EVALUATION     "Unable to delete the installed evaluation license."
+IDS_ERROR_LICENSE_ACTIVATION    "Unable to activate the license key."
+IDS_ERROR_INSTALL_LICENSE       "Unable to install the activated license key."
+IDS_ERROR_CHECK_UPDATES         "Unable to get the updates information from the server.\r\nClick the Open Downloads Page button to check for updates manually."  // multiline string, lines separated by \r\n
+IDS_OPEN_DOWNLOADS              "Open Downloads Page"
+IDS_ERROR_LICENSE_DEACTIVATION  "Unable to deactivate the license key."
+IDS_ERROR_UNINSTALL_LICENSE     "Unable to uninstall the deactivated license key."
+IDS_DELETE_IF_DEACTIVATION_FAILED "Do you still want to delete the license file even though it could not be deactivated?"
+END
+
+STRINGTABLE // Activate/Deactivate License Window
+BEGIN
+IDS_ACTIVATE_LICENSE_CAPTION    "Activate License"
+IDS_LICENSE_CAT_ACTIVATION      "License\nThe license key that you want to activate on this machine."
+IDS_LICENSE_CAT_DEACTIVATION    "License\nThe license key that you want to deactivate on this machine."
+IDS_LICENSE_KEY                 "Key\nXXXX-XXXX-XXXX-XXXX-XXXX"
+IDS_LICENSE_OWNER               "Owner\nSpecifies the owner of the license: name of the company/organization, or name of the person."
+IDS_OWNER_EMAIL                 "Email\nEmail address registered for technical support and notifications."
+IDS_NOTIFICATIONS               "Notifications\nSpecify which notifications you want to receive by email."
+IDS_NOTIFY_LICENSE              "About this license\nInform about important news related to the activated license."
+IDS_NOTIFY_PRODUCT              "About Syslog Watcher\nInform about important news related to Syslog Watcher."
+IDS_OTHER_PRODUCTS              "About other products\nInform about other products developed by EZ5 Systems Ltd."
+IDS_ACTIVATE                    "Activate"
+IDS_ACTIVATE_MANUAL             "Activate Manually via Email"
+IDS_ENTER_LICENSE_KEY           "Please enter the license key."
+IDS_ENTER_LICENSE_OWNER         "Please enter the license owner."
+IDS_ENTER_OWNER_EMAIL           "Please enter the email address."
+IDS_DEACTIVATE_LICENSE_CAPTION  "Deactivate License"
+IDS_DEACTIVATE                  "Deactivate"
+END
+
+STRINGTABLE // View Messages Window
+BEGIN
+IDS_VIEWREQ_CAPTION              "View Syslog Messages"
+IDS_VIEWREQ_CATEGORY             "Viewer\nGrid viewer configuration to use."
+IDS_VIEWREQ_CONFIGURATION        "Grid viewer\nSelected grid viewer configuration."
+IDS_VIEWREQ_TIME_PERIOD          "Period\nThe time period in which the search is performed."
+IDS_VIEWREQ_FROM                 "From\nBeginning of the time period."
+IDS_VIEWREQ_UNTIL                "Until\nEnd of the time period."
+IDS_VIEWREQ_VIEW                 "Load"
+IDS_VIEWREQ_COMPLEX_FILTER       "Complex filter\nExpression for advanced message filtering."
+IDS_VIEWREQ_TIMEZONE             "Time zone\nThe time zone specified in the syslog storage."
+IDS_VIEWREQ_RELOAD               "Apply && Load"
+IDS_VIEWREQ_EDIT_CAPTION         "Edit View Parameters"
+END
+
+STRINGTABLE // Originator Filter Window
+BEGIN
+IDS_OFILTER_WINDOW_CAPTION      "Originator Filter"
+IDS_OFILTER_GROUPS_LABEL        "Originator groups"
+IDS_OFILTER_GROUPS_GROUP        "Group"
+IDS_OFILTER_GROUPS_ORIGINATORS  "Originators"
+IDS_OFILTER_NO_GROUPS           "The storage contains no originator groups."
+IDS_OFILTER_ORIGINATORS_LABEL   "Originators"
+IDS_OFILTER_ORIGINATOR          "Originator"
+IDS_OFILTER_NO_ORIGINATORS      "The storage contains no originators."
+IDS_OFILTER_ALL_ORIGINATORS     "All originators"
+IDS_OFILTER_GROUPS              "group(s)"
+IDS_OFILTER_ORIGINATORS         "originator(s)"
+END
+
+STRINGTABLE // Editor Window: Filter
+BEGIN
+IDS_EDITOR_TEXT                 "Formatter:"
+IDS_EDITOR_FILTER               "Filter:"
+IDS_EDITOR_EXTRACTOR            "Regular expression:"
+IDS_EDITOR_MESSAGE              "Syslog message (for testing):"
+IDS_EDITOR_RESULT               "Result:"
+IDS_EDITOR_ERR_ENTER_REGEXP     "Please enter the regular expression."
+IDS_EDITOR_ERR_INVALID_REGEXP   "The regular expression is invalid: "
+IDS_EDITOR_ERR_ENTER_MESSAGE    "Please enter the testing message."
+IDS_EDITOR_ERR_NOTHING_EXTRACTED "Nothing is extracted."
+IDS_EDITOR_ERR_NO_REGEXP_FIELDS "The regular expression has no captures. Capture format: (?<STD_FIELD>...) or (?<$CUSTOM_FIELD>...)"
+IDS_EDITOR_EMPTY_FILTER         "An empty filter matches any syslog message."
+IDS_EDITOR_FILTER_INVALID       "Filter syntax is INVALID: "
+IDS_EDITOR_FILTER_VALID         "Filter syntax is VALID."
+END
+
+STRINGTABLE // Error Message Window
+BEGIN
+IDS_SUPPORT_TAG             "Support tag:"
+END
+
+STRINGTABLE // Server Configuration Window
+BEGIN
+IDS_SETS_CAPTION                "Server Configuration"
+IDS_SETS_IMPORT                 "Import..."
+IDS_SETS_EXPORT                 "Export..."
+IDS_SETS_ERR_FAILED_LOAD        "Failed to load the server configuration file."
+IDS_SETS_ERR_FAILED_PARSE        "Failed to parse the server configuration file."
+IDS_SETS_ERR_FAILED_APPLY       "Failed to apply the server configuration file."
+IDS_SETS_CAPTION_LOAD           "Load Server Configuration"
+IDS_SETS_CAPTION_APPLY          "Apply Server Configuration"
+END
+
+STRINGTABLE // UI Options Window
+BEGIN
+IDS_OPT_WINDOW_CAPTION          "Manager Options"
+END
+
+
+///////////////////////////////////////////////////////////////////////////////
+// SERVER CONFIGURATION GROUPS - translate only strings in quotes ("...")
+// IMPORTANT: if the string contains two parts separated with \n
+//    1st part (before \n) = short option name
+//    2st part (after \n) = long option description (can be empty)
+
+STRINGTABLE // Server Configuration: Network Interfaces
+BEGIN
+IDS_SETS_NETWORK_TITLE            "Network Interfaces"
+IDS_SETS_NETWORK_ADD_UDP          "Add UDP Interface"
+IDS_SETS_NETWORK_ADD_TCP          "Add TCP Interface"
+IDS_SETS_NETWORK_ADD_TLS          "Add TLS Interface"
+IDS_SETS_NETWORK_INTERFACE        "Interface"
+IDS_SETS_NETWORK_LOCAL_ADDRESS    "Local IPv4/IPv6 address\n0.0.0.0 = all IPv4 addresses on the local machine\r\n::0 = all IPv6 addresses on the local machine"
+IDS_SETS_NETWORK_PORT             "Port\n"
+IDS_SETS_NETWORK_MAX_LENGTH       "Maximum message length\n"
+IDS_SETS_NETWORK_SOCKET_BUFFER    "Socket buffer size\n"
+IDS_SETS_NETWORK_DELETE_INTF      "Delete Interface"
+IDS_SETS_NETWORK_MAX_CONNECTION   "Maximum concurrent connections\n"
+IDS_SETS_NETWORK_ADVANCED         "Advanced\n"
+IDS_SETS_NETWORK_DISC_OLDEST      "Disconnect the oldest to accept a new one\n"
+IDS_SETS_NETWORK_OCTET_COUNTING   "Detect 'octect counting' algorithm\n"
+IDS_SETS_NETWORK_USE_CR_LF        "Use CR/LF symbols to split stream\n"
+IDS_SETS_NETWORK_DISC_INACTIVE    "Disconnect client if inactive for (seconds)\n0 = do not disconnect clients due to inactivity"
+IDS_SETS_NETWORK_TLS_OPTIONS      "TLS Options\n"
+IDS_SETS_NETWORK_TLS_MIN_VERSION  "Minimum protocol version\n"
+IDS_SETS_NETWORK_TLS_CERTIFICATE  "Server certificate file\n"
+IDS_SETS_NETWORK_TLS_PRIVATE_KEY  "Private key file\n"
+IDS_SETS_NETWORK_TLS_PRIV_KEY_PWD "Private key password\n"
+IDS_SETS_NETWORK_TLS_HOSTS_FILE   "Hosts file for certificate path validation\n"
+IDS_SETS_NETWORK_TLS_CLIENT_CERTS "Client certificates\n"
+IDS_SETS_NETWORK_TLS_DO_NOT_REQ   "Do not request"
+IDS_SETS_NETWORK_TLS_REQUEST      "Request, validate if received"
+IDS_SETS_NETWORK_TLS_REQUIRE      "Require, validate"
+IDS_SETS_NETWORK_TLS_VAL_CLIENTS  "Validate clients via"
+IDS_SETS_NETWORK_TLS_VAL_FP       "Fingerprints"
+IDS_SETS_NETWORK_TLS_VAL_CAFILE   "CA file"
+IDS_SETS_NETWORK_TLS_VAL_CAFOLDER "CA folder"
+IDS_SETS_NETWORK_TLS_VAL_FP_FILE  "Fingerprints file\n"
+IDS_SETS_NETWORK_TLS_VAL_CAFILE_PATH   "CA file\n"
+IDS_SETS_NETWORK_TLS_VAL_CAFOLDER_PATH "CA folder\n"
+END
+
+STRINGTABLE // Server Configuration: Preprocessor
+BEGIN
+IDS_SETS_IN_TITLE                   "Preprocessor"
+IDS_SETS_IN_DEFAULT_SEVERITY_CAT    "Preprocessor\nMessage processing options."
+IDS_SETS_IN_FILTER                  "Filter\nIncoming filtration options."
+IDS_SETS_IN_DEFAULT_SEVERITY        "Deafault severity\nAssign this level if severity is unknown."
+IDS_SETS_IN_ENCODING_UTF8           "Message body encoding\n"
+IDS_SETS_IN_DISCARD_LEVEL           "Discard messages with severity level\nIncoming filter by severity level."
+IDS_SETS_IN_DO_NOT_DISCARD          "Do not discard (accept all levels)"
+IDS_SETS_IN_DISCARD_WORDS           "Discard messages that contain (one per line)\nIncoming filter by content\r\nExpand and use Ctrl+Enter to enter more than one."
+IDS_SETS_IN_BUFFER                  "Buffer\nInbound buffer configuration."
+IDS_SETS_IN_BUFFER_SIZE             "Buffer size (messages)\nValid range 1000-10000000."
+IDS_SETS_IN_BUFFER_WARNING          "Warning if buffer is more than (%) full\n"
+IDS_SETS_IN_INVALID_BUFFER_SIZE     "Please enter a valid size of the buffer."
+END
+
+STRINGTABLE // Server Configuration: Originator ID
+BEGIN
+IDS_SETS_ORIG_TITLE             "Originator ID"
+IDS_SETS_ORIG_DEFAULT           "Static Originators\nOriginator ID depends on where the message came from."
+IDS_SETS_ORIG_ID                "Originator ID extractor\nAlgorithm for extracting originator ID from the content of a message."
+IDS_SETS_ORIG_ID_IP_ADDR        "Use sender's IP address as originator ID"
+IDS_SETS_ORIG_ID_NOT_EXISTS     "If originator ID is not registered\nBehavior when a new message is received from an unknown originator."
+IDS_SETS_ORIG_ID_REGISTER_NEW   "Register new originator ID"
+IDS_SETS_ORIG_ID_DISCARD        "Discard messages"
+IDS_SETS_ORIG_DYNAMIC           "Dynamic Originators\nOriginator ID is retrived (extracted) from the content of a message."
+IDS_SETS_ORIG_ADD_DYNAMIC       "Add Dynamic Originators"
+IDS_SETS_ORIG_IP_FROM           "From IP address\nBeginning of the IP address range."
+IDS_SETS_ORIG_IP_UNTIL          "Until IP address (optional)\nIf empty, then there is only one IP address in the range."
+IDS_SETS_ORIG_REGULAR_EXP       "Regular expression\nFor extracting the originator ID from the content of a message."
+IDS_SETS_ORIG_ID_UNABLE_EXTRACT "If unable to extract originator ID\nBehavior in case of an error."
+IDS_SETS_ORIG_FALLBACKTP_STATIC "Handle as a static originator"
+IDS_SETS_ORIG_ERR_IP_FROM       "Please enter the starting address of the IP range."
+IDS_SETS_ORIG_ERR_REGEXP        "Please enter a regular expression to extract Originator ID."
+END
+
+STRINGTABLE // Server Configuration: Storage Writer 
+BEGIN
+IDS_SETS_WRITER_TITLE           "Storage Writer"
+IDS_SETS_WRITER_CATEGORY        "Storage\nSyslog storage configuration."
+IDS_SETS_WRITER_FOLDER_PATH     "Storage folder\nPath to the folder where the syslog storage files are located."
+IDS_SETS_WRITER_HOURS_PER_FILE  "Hours per file\nChanging this parameter is only available for certain license types."
+IDS_SETS_WRITER_DELETE_OLDER    "Retention period (days)\nDelete files that are older than the specified number of days."
+IDS_SETS_WRITER_LIMITS          "Limits\nSettings that limit the storage size."
+IDS_SETS_WRITER_LIMIT_SIZE      "Limit total size of the storage files (GB)\nDelete the oldest file if the syslog storage exceeeds the maximum size."
+IDS_SETS_WRITER_CHECK_SIZE      "Check the total size every (minutes)\n"
+IDS_SETS_WRITER_ADVANCED        "Advanced\n"
+IDS_SETS_WRITER_RETRY_AFTER     "Retry in case of an error (ms)\n"
+IDS_SETS_WRITER_FLUSH_EVERY     "Force data to disk every (ms)\n"
+END
+
+STRINGTABLE // Server Configuration: Server 
+BEGIN
+IDS_SETS_GENERAL_TITLE              "Server"
+IDS_SETS_GENERAL_LOG                "Server Log\nSyslog Watcher Server log configuration."
+IDS_SETS_GENERAL_LOG_FOLDER         "Log folder\nFolder where log files are stored."
+IDS_SETS_GENERAL_LOG_MAX_FILES      "Maximum number of files\nIf the number of files is exceeded, the oldest one will be automatically deleted."
+IDS_SETS_GENERAL_LOG_MAX_SIZE       "Maximum size of each file (MB)\nIf the file size is exceeded, a new file will be created."
+END
+
+
+///////////////////////////////////////////////////////////////////////////////
+// SERVER CONFIGURATION GROUPS - translate only strings in quotes ("...")
+// IMPORTANT: if the string contains two parts separated with \n
+//    1st part (before \n) = short option name
+//    2st part (after \n) = long option description (can be empty)
+
+STRINGTABLE // UI Options: General
+BEGIN
+IDS_OPT_GENERAL_TITLE           "General"
+IDS_OPT_GENERAL_UI              "User Interface\n"
+IDS_OPT_GENERAL_LANGUAGE        "Language\n"
+IDS_OPT_GENERAL_LANG_ENGLISH    "English"
+END
+
+STRINGTABLE // UI Options: Grid Viewers
+BEGIN
+IDS_OPT_GRID_TITLE              "Grid Viewers"
+IDS_OPT_GRID_COLUMN_TITLE       "Column title\n"
+IDS_OPT_GRID_FORMAT             "Format\n"
+IDS_OPT_GRID_WIDTH              "Width\n"
+IDS_OPT_GRID_MAX_ROWS           "Rows per page\n"
+IDS_OPT_GRID_DELETE             "Delete Viewer"
+IDS_OPT_GRID_NEW                "New Grid Viewer"
+IDS_OPT_GRID_NEW_NAME           "New Grid"
+IDS_OPT_GRID_NEW_COLUMN_NAME    "New column"
+IDS_OPT_GRID_VIEWER             "Grid Viewer"
+IDS_OPT_GRID_COLUMNS            "Columns\n"
+IDS_OPT_GRID_ADD_COLUMN         "Add Column"
+IDS_OPT_GRID_COLOR_FILTER       "Message filter\n"
+IDS_OPT_GRID_COLOR_TEXT         "Text\n"
+IDS_OPT_GRID_COLOR_BACK         "Background\n"
+IDS_OPT_GRID_COLORS             "Colors\n"
+IDS_OPT_GRID_NEW_COLOR_NAME     "New color"
+IDS_OPT_GRID_ADD_COLOR          "Add Color Rule"
+IDS_OPT_GRID_COLOR_NAME         "Color rule\n"
+IDS_OPT_GRID_DETAILS_HTML       "Details HTML\n"
+IDS_OPT_GRID_DETAILS_CSS        "Details CSS\n"
+END
+
+
+///////////////////////////////////////////////////////////////////////////////
+// TABS - translate only strings in quotes ("...")
+// 
+// IMPORTANT: Keep keep unicode symbols which are ICONS
+// 
+// Some of strings have 3 parts separated by \n
+// "[Description for status bar]\n[Description for tooltip]\n[Button]"
+// in most cases the status bar description is the same as the tooltip
+
+STRINGTABLE // Common controls
+BEGIN
+IDC_REFRESH                     "Refresh the current view\nRefresh the current view\n↻ Refresh"
+END
+
+STRINGTABLE // Viewer tab
+BEGIN
+IDR_DOC_VIEWER                   "\nViewer \n\n\n\n\n" // tab title: KEEP the exact format with all \n
+IDC_MODIFY_VIEWER               "\n\n⚙ Parameters..."
+IDC_NEXT_PAGE                   "\n\n⏩ Next Page"
+IDC_FIRST_PAGE                  "\n\n⏮ First"
+IDC_MSG_FILTER_LABEL            "Filter:"
+IDS_VIEWER_LOADED               "Loaded"
+IDS_VIEWER_FROM_PERIOD          "from period"
+IDS_VIEWER_EMPTY                "The selected period does not contain messages that meet all filtering criteria."
+IDS_MESSAGE_DETAILS             "Message Details"
+END
+
+STRINGTABLE // Explorer tab
+BEGIN
+IDR_DOC_EXPLORER                 "\nExplorer \n\n\n\n\n" // tab title: KEEP the exact format with all \n
+END
+
+STRINGTABLE // Tab: Server
+BEGIN
+IDS_SERVER_TITLE                  "Server"
+IDC_SERVER_STARTUP                "Service startup type:"
+IDS_SERVER_STARTUP_MANUAL         "Manual"
+IDS_SERVER_STARTUP_AUTO           "Automatic"
+IDS_SERVER_CHANGE_STARTUP_TYPE    "Changing Startup Type"
+IDS_FAILED_SERVICE_STARTUP_CHANGE "Failed to change the service starup type."
+END
+
+STRINGTABLE // Tab: Server Log
+BEGIN
+IDS_LOG_TAB                        "Server Log"
+END
+
+STRINGTABLE // Tab: Originators (toolbar)
+BEGIN
+IDC_ADD_ORIGINATOR              "➕ Add Originator..."
+IDC_EDIT_ORIGINATORS            "✎ Edit..."
+IDC_DELETE_ORIGINATORS          "❌ Delete"
+IDC_GROUP_FILTER_LABEL          "Filter by group:"
+IDC_GROUP_FILTER_ALL            "All originators"
+IDC_TEXT_FILTER_LABEL           "Filter by ID/Name:"
+END
+
+STRINGTABLE // Tab: Originators (grid)
+BEGIN
+IDS_GRID_ORIG_ID                "ID"
+IDS_GRID_ORIG_NAME              "Name"
+IDS_GRID_ORIG_PARSE             "Parser"
+IDS_GRID_ORIG_GROUPS            "Groups"
+IDS_GRID_ORIG_DESCRIPTION       "Description"
+IDS_GRID_ORIG_NO_RECORDS        "The syslog storage contains no originators.";
+IDS_GRID_ORIG_NUM_TOTAL         "Total originators"
+END
+
+STRINGTABLE // Tab: Storage
+BEGIN
+IDS_STRG_TITLE                    "Storage"
+IDS_STRG_COLUMN_TOTAL             "TOTAL"
+IDS_STRG_SIZE                     "Size"
+IDS_STRG_COLUMN_PERIOD            "Period"
+IDS_STRG_FILES                    "Files"
+IDS_STRG_MESSAGES                 "Messages"
+IDS_STRG_TIMEZONE                 "Time zone"
+IDS_STRG_UPDATING                 "updating"
+IDS_STRG_FOLDER_LABEL             "Folder:"
+END
+
+
+///////////////////////////////////////////////////////////////////////////////
+// MENUS - translate only strings in quotes ("...")
+
+IDM_DATETIME_FROM MENU
+BEGIN
+  POPUP "From"
+  BEGIN
+    POPUP "Set Time"
+    BEGIN
+      MENUITEM "00:00", IDMI_FROM_TIME_00
+      MENUITEM "01:00", IDMI_FROM_TIME_01
+      MENUITEM "02:00", IDMI_FROM_TIME_02
+      MENUITEM "03:00", IDMI_FROM_TIME_03
+      MENUITEM "04:00", IDMI_FROM_TIME_04
+      MENUITEM "05:00", IDMI_FROM_TIME_05
+      MENUITEM "06:00", IDMI_FROM_TIME_06
+      MENUITEM "07:00", IDMI_FROM_TIME_07
+      MENUITEM "08:00", IDMI_FROM_TIME_08
+      MENUITEM "09:00", IDMI_FROM_TIME_09
+      MENUITEM "10:00", IDMI_FROM_TIME_10
+      MENUITEM "11:00", IDMI_FROM_TIME_11
+      MENUITEM "12:00", IDMI_FROM_TIME_12
+      MENUITEM "13:00", IDMI_FROM_TIME_13
+      MENUITEM "14:00", IDMI_FROM_TIME_14
+      MENUITEM "15:00", IDMI_FROM_TIME_15
+      MENUITEM "16:00", IDMI_FROM_TIME_16
+      MENUITEM "17:00", IDMI_FROM_TIME_17
+      MENUITEM "18:00", IDMI_FROM_TIME_18
+      MENUITEM "19:00", IDMI_FROM_TIME_19
+      MENUITEM "20:00", IDMI_FROM_TIME_20
+      MENUITEM "21:00", IDMI_FROM_TIME_21
+      MENUITEM "22:00", IDMI_FROM_TIME_22
+      MENUITEM "23:00", IDMI_FROM_TIME_23
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "Today", IDMI_FROM_TODAY
+    MENUITEM "Yesterday", IDMI_FROM_YESTERDAY
+    MENUITEM SEPARATOR
+    MENUITEM "This Month", IDMI_FROM_THIS_MONTH
+    MENUITEM "Last Month", IDMI_FROM_LAST_MONTH
+    MENUITEM SEPARATOR
+    MENUITEM "This Year", IDMI_FROM_THIS_YEAR
+    MENUITEM "Last Year", IDMI_FROM_LAST_YEAR
+  END
+END
+
+IDM_DATETIME_UNTIL MENU
+BEGIN
+  POPUP "Until"
+  BEGIN
+    POPUP "Set Time"
+    BEGIN
+      MENUITEM "00:00", IDMI_UNTIL_TIME_00
+      MENUITEM "01:00", IDMI_UNTIL_TIME_01
+      MENUITEM "02:00", IDMI_UNTIL_TIME_02
+      MENUITEM "03:00", IDMI_UNTIL_TIME_03
+      MENUITEM "04:00", IDMI_UNTIL_TIME_04
+      MENUITEM "05:00", IDMI_UNTIL_TIME_05
+      MENUITEM "06:00", IDMI_UNTIL_TIME_06
+      MENUITEM "07:00", IDMI_UNTIL_TIME_07
+      MENUITEM "08:00", IDMI_UNTIL_TIME_08
+      MENUITEM "09:00", IDMI_UNTIL_TIME_09
+      MENUITEM "10:00", IDMI_UNTIL_TIME_10
+      MENUITEM "11:00", IDMI_UNTIL_TIME_11
+      MENUITEM "12:00", IDMI_UNTIL_TIME_12
+      MENUITEM "13:00", IDMI_UNTIL_TIME_13
+      MENUITEM "14:00", IDMI_UNTIL_TIME_14
+      MENUITEM "15:00", IDMI_UNTIL_TIME_15
+      MENUITEM "16:00", IDMI_UNTIL_TIME_16
+      MENUITEM "17:00", IDMI_UNTIL_TIME_17
+      MENUITEM "18:00", IDMI_UNTIL_TIME_18
+      MENUITEM "19:00", IDMI_UNTIL_TIME_19
+      MENUITEM "20:00", IDMI_UNTIL_TIME_20
+      MENUITEM "21:00", IDMI_UNTIL_TIME_21
+      MENUITEM "22:00", IDMI_UNTIL_TIME_22
+      MENUITEM "23:00", IDMI_UNTIL_TIME_23
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "1 Minute", IDMI_UNTIL_1_MINUTE
+    MENUITEM "5 Minutes", IDMI_UNTIL_5_MINUTES
+    MENUITEM "15 Minutes", IDMI_UNTIL_15_MINUTES
+    MENUITEM SEPARATOR
+    MENUITEM "1 Hour", IDMI_UNTIL_1_HOUR
+    MENUITEM "2 Hour", IDMI_UNTIL_2_HOURS
+    MENUITEM "6 Hours", IDMI_UNTIL_6_HOURS
+    MENUITEM "12 Hours", IDMI_UNTIL_12_HOURS
+    MENUITEM SEPARATOR
+    MENUITEM "1 Day", IDMI_UNTIL_1_DAY
+    MENUITEM "2 Day", IDMI_UNTIL_2_DAY
+    MENUITEM "3 Day", IDMI_UNTIL_3_DAY
+    MENUITEM "7 Days", IDMI_UNTIL_7_DAYS
+    MENUITEM "14 Days", IDMI_UNTIL_14_DAYS
+    MENUITEM "30 Days", IDMI_UNTIL_30_DAYS
+  END
+END
+
+IDM_DATETIME_PERIOD MENU
+BEGIN
+  POPUP "Period"
+  BEGIN
+    MENUITEM "⇤ Previous", IDMI_MOVE_PREVIOUS_PERIOD // keep the first ICON symbol
+    MENUITEM "⇥ Next", IDMI_MOVE_NEXT_PERIOD // keep the first ICON symbol
+    MENUITEM SEPARATOR
+    POPUP "Shift Earlier"
+    BEGIN
+      MENUITEM "1 Minute", IDMI_MOVE_EARLIER_1_MINUTE
+      MENUITEM "5 Minutes", IDMI_MOVE_EARLIER_5_MINUTES
+      MENUITEM "15 Minutes", IDMI_MOVE_EARLIER_15_MINUTES
+      MENUITEM "30 Minutes", IDMI_MOVE_EARLIER_30_MINUTES
+      MENUITEM SEPARATOR
+      MENUITEM "1 Hour", IDMI_MOVE_EARLIER_1_HOUR
+      MENUITEM "2 Hours", IDMI_MOVE_EARLIER_2_HOURS
+      MENUITEM "6 Hours", IDMI_MOVE_EARLIER_6_HOURS
+      MENUITEM "12 Hours", IDMI_MOVE_EARLIER_12_HOURS
+      MENUITEM SEPARATOR
+      MENUITEM "1 Day", IDMI_MOVE_EARLIER_1_DAY
+      MENUITEM "2 Days", IDMI_MOVE_EARLIER_2_DAYS
+      MENUITEM "7 Days", IDMI_MOVE_EARLIER_7_DAYS
+      MENUITEM "30 Days", IDMI_MOVE_EARLIER_30_DAYS
+    END
+    POPUP "Shift Later"
+    BEGIN
+      MENUITEM "1 Minute", IDMI_MOVE_LATER_1_MINUTE
+      MENUITEM "5 Minutes", IDMI_MOVE_LATER_5_MINUTES
+      MENUITEM "15 Minutes", IDMI_MOVE_LATER_15_MINUTES
+      MENUITEM "30 Minutes", IDMI_MOVE_LATER_30_MINUTES
+      MENUITEM SEPARATOR
+      MENUITEM "1 Hour", IDMI_MOVE_LATER_1_HOUR
+      MENUITEM "2 Hours", IDMI_MOVE_LATER_2_HOURS
+      MENUITEM "6 Hours", IDMI_MOVE_LATER_6_HOURS
+      MENUITEM "12 Hours", IDMI_MOVE_LATER_12_HOURS
+      MENUITEM SEPARATOR
+      MENUITEM "1 Day", IDMI_MOVE_LATER_1_DAY
+      MENUITEM "2 Days", IDMI_MOVE_LATER_2_DAYS
+      MENUITEM "7 Days", IDMI_MOVE_LATER_7_DAYS
+      MENUITEM "30 Days", IDMI_MOVE_LATER_30_DAYS
+    END
+    MENUITEM SEPARATOR
+    POPUP "Last"
+    BEGIN
+      MENUITEM "1 Minute", IDMI_LAST_1_MINUTE
+      MENUITEM "5 Minutes", IDMI_LAST_5_MINUTES
+      MENUITEM "15 Minutes", IDMI_LAST_15_MINUTES
+      MENUITEM "30 Minutes", IDMI_LAST_30_MINUTES
+      MENUITEM SEPARATOR
+      MENUITEM "1 Hour", IDMI_LAST_1_HOUR
+      MENUITEM "2 Hours", IDMI_LAST_2_HOURS
+      MENUITEM "6 Hours", IDMI_LAST_6_HOURS
+      MENUITEM "12 Hours", IDMI_LAST_12_HOURS
+      MENUITEM SEPARATOR
+      MENUITEM "1 Day", IDMI_LAST_1_DAY
+      MENUITEM "2 Days", IDMI_LAST_2_DAYS
+      MENUITEM "7 Days", IDMI_LAST_7_DAYS
+      MENUITEM "30 Days", IDMI_LAST_30_DAYS
+    END
+  END
+END
+
+IDC_SERVER_RESET MENU
+BEGIN
+  POPUP "Reset Counters"
+  BEGIN
+    POPUP "Discarded Messages"
+    BEGIN
+      MENUITEM "License limit exceeded", IDMI_RESET_LICENSE_LIMIT
+      MENUITEM "Due buffer overflow", IDMI_RESET_BUFFER_OVERFLOW
+      MENUITEM "Due severity filter", IDMI_RESET_SEVERITY_FILTER
+      MENUITEM "Due content filter", IDMI_RESET_CONTENT_FILTER
+      MENUITEM "From unknown originators", IDMI_RESET_UNKNONW_ORIGINATOR
+      MENUITEM "Due storage failure", IDMI_RESET_STORAGE_FAILURE
+      MENUITEM "Unable to extract originator ID", IDMI_RESET_UNABLE_EXTRACT_ID
+    END
+    MENUITEM "Storage Writer", IDMI_RESET_WRITER_COUNTERS
+  END
+END
